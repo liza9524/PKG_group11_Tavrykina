@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ColorConverter9/1.0.0": {
+        "dependencies": {
+          "ColorConverter9.Model": "1.0.0"
+        },
+        "runtime": {
+          "ColorConverter9.dll": {}
+        }
+      },
+      "ColorConverter9.Model/1.0.0": {
+        "runtime": {
+          "ColorConverter9.Model.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ColorConverter9/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ColorConverter9.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

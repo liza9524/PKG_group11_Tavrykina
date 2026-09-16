@@ -1,0 +1,13 @@
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\bin\Debug\net8.0\ColorConverter9.Model.deps.json
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\bin\Debug\net8.0\ColorConverter9.Model.dll
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\bin\Debug\net8.0\ColorConverter9.Model.pdb
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\obj\Debug\net8.0\ColorConverter9.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\obj\Debug\net8.0\ColorConverter9.Model.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\obj\Debug\net8.0\ColorConverter9.Model.AssemblyInfo.cs
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\obj\Debug\net8.0\ColorConverter9.Model.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\obj\Debug\net8.0\ColorConverter9.Model.dll
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\obj\Debug\net8.0\refint\ColorConverter9.Model.dll
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\obj\Debug\net8.0\ColorConverter9.Model.pdb
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\obj\Debug\net8.0\ref\ColorConverter9.Model.dll
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\obj\Debug\net8.0\ColorCon.CD91A3AF.Up2Date
+C:\Users\USER\Desktop\ColorConverter9\ColorConverter9.Model\obj\Debug\net8.0\ColorConverter9.Model.sourcelink.json
