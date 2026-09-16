@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uAEN2wrZ4ho=",
+  "dgSpecHash": "UX/KuX6iQjE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.Tests\\ColorConverter9.Tests.csproj",
+  "projectFilePath": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.Tests\\ColorConverter9.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",

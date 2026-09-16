@@ -6,11 +6,7 @@ using ColorConverter9.Core;
 
 namespace ColorConverter9
 {
-    /// <summary>
-    /// VIEW. Ничего не считает сама - вся математика в ColorMath (Model),
-    /// вся логика "что откуда пересчитывать" в ColorViewModel (Controller).
-    /// Эта форма только рисует контролы и дергает ViewModel.
-    /// </summary>
+    
     public partial class Form1 : Form
     {
         private readonly ColorViewModel vm = new ColorViewModel();
@@ -46,7 +42,6 @@ namespace ColorConverter9
             CreateUI();
 
             vm.StateChanged += OnStateChanged;
-            // принудительно отрисовать стартовое состояние
             vm.SetFromRgbHex(255, 0, 0);
         }
 
@@ -245,11 +240,7 @@ namespace ColorConverter9
 
             y += 20;
         }
-
-        // Требование 5: под каждым ползунком - полоска-градиент,
-        // показывающая, какой цвет получится в каждой точке диапазона
-        // ЭТОЙ компоненты при текущих значениях ДВУХ остальных.
-        private void CreateSlider(string label, int x, ref int y,
+ private void CreateSlider(string label, int x, ref int y,
             out TrackBar track, out TextBox text, out Panel gradient, int min, int max)
         {
             Label lbl = new Label

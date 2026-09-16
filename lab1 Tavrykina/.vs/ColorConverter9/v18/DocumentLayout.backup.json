@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\ColorConverter9\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|ColorConverter9.App\\ColorConverter9.App.csproj|c:\\users\\user\\desktop\\colorconverter9\\colorconverter9.app\\colorconverter9.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|ColorConverter9.App\\ColorConverter9.App.csproj|solutionrelative:colorconverter9.app\\colorconverter9.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|ColorConverter9.App\\ColorConverter9.App.csproj|c:\\users\\user\\desktop\\colorconverter9\\colorconverter9.app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|ColorConverter9.App\\ColorConverter9.App.csproj|solutionrelative:colorconverter9.app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|ColorConverter9.Model\\ColorConverter9.Model.csproj|c:\\users\\user\\desktop\\colorconverter9\\colorconverter9.model\\colormath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|ColorConverter9.Model\\ColorConverter9.Model.csproj|c:\\users\\user\\my-project\\lab1 tavrykina\\colorconverter9.model\\colormath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|ColorConverter9.Model\\ColorConverter9.Model.csproj|solutionrelative:colorconverter9.model\\colormath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|ColorConverter9.Model\\ColorConverter9.Model.csproj|c:\\users\\user\\desktop\\colorconverter9\\colorconverter9.model\\colorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|ColorConverter9.Model\\ColorConverter9.Model.csproj|c:\\users\\user\\my-project\\lab1 tavrykina\\colorconverter9.model\\colorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|ColorConverter9.Model\\ColorConverter9.Model.csproj|solutionrelative:colorconverter9.model\\colorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|ColorConverter9.Tests\\ColorConverter9.Tests.csproj|c:\\users\\user\\desktop\\colorconverter9\\colorconverter9.tests\\colormathtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|ColorConverter9.Tests\\ColorConverter9.Tests.csproj|c:\\users\\user\\my-project\\lab1 tavrykina\\colorconverter9.tests\\colormathtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33333333-3333-3333-3333-333333333333}|ColorConverter9.Tests\\ColorConverter9.Tests.csproj|solutionrelative:colorconverter9.tests\\colormathtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|ColorConverter9.App\\ColorConverter9.App.csproj|c:\\users\\user\\desktop\\colorconverter9\\colorconverter9.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|ColorConverter9.App\\ColorConverter9.App.csproj|c:\\users\\user\\my-project\\lab1 tavrykina\\colorconverter9.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|ColorConverter9.App\\ColorConverter9.App.csproj|solutionrelative:colorconverter9.app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|ColorConverter9.App\\ColorConverter9.App.csproj|c:\\users\\user\\my-project\\lab1 tavrykina\\colorconverter9.app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|ColorConverter9.App\\ColorConverter9.App.csproj|solutionrelative:colorconverter9.app\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|ColorConverter9.App\\ColorConverter9.App.csproj|c:\\users\\user\\my-project\\lab1 tavrykina\\colorconverter9.app\\colorconverter9.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{22222222-2222-2222-2222-222222222222}|ColorConverter9.App\\ColorConverter9.App.csproj|solutionrelative:colorconverter9.app\\colorconverter9.app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,11 +46,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "ColorConverter9.App.csproj",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.App\\ColorConverter9.App.csproj",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.App\\ColorConverter9.App.csproj",
               "RelativeDocumentMoniker": "ColorConverter9.App\\ColorConverter9.App.csproj",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.App\\ColorConverter9.App.csproj",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.App\\ColorConverter9.App.csproj",
               "RelativeToolTip": "ColorConverter9.App\\ColorConverter9.App.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -59,62 +59,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.App\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.App\\Form1.cs",
               "RelativeDocumentMoniker": "ColorConverter9.App\\Form1.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.App\\Form1.cs",
-              "RelativeToolTip": "ColorConverter9.App\\Form1.cs",
-              "ViewState": "AgIAALcBAAAAAAAAAAAYwMwBAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.App\\Form1.cs*",
+              "RelativeToolTip": "ColorConverter9.App\\Form1.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T10:24:56.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.App\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.App\\Program.cs",
               "RelativeDocumentMoniker": "ColorConverter9.App\\Program.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.App\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.App\\Program.cs",
               "RelativeToolTip": "ColorConverter9.App\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T10:24:54.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ColorMathTests.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.Tests\\ColorMathTests.cs",
-              "RelativeDocumentMoniker": "ColorConverter9.Tests\\ColorMathTests.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.Tests\\ColorMathTests.cs",
-              "RelativeToolTip": "ColorConverter9.Tests\\ColorMathTests.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAuwKkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T10:24:52.603Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ColorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.Model\\ColorViewModel.cs",
-              "RelativeDocumentMoniker": "ColorConverter9.Model\\ColorViewModel.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.Model\\ColorViewModel.cs",
-              "RelativeToolTip": "ColorConverter9.Model\\ColorViewModel.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAwwE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T10:24:50.239Z"
+              "WhenOpened": "2026-09-16T10:24:54.879Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ColorMathTests.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.Tests\\ColorMathTests.cs",
+              "RelativeDocumentMoniker": "ColorConverter9.Tests\\ColorMathTests.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.Tests\\ColorMathTests.cs",
+              "RelativeToolTip": "ColorConverter9.Tests\\ColorMathTests.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAAAKkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:24:52.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ColorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.Model\\ColorViewModel.cs",
+              "RelativeDocumentMoniker": "ColorConverter9.Model\\ColorViewModel.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.Model\\ColorViewModel.cs",
+              "RelativeToolTip": "ColorConverter9.Model\\ColorViewModel.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T10:24:50.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ColorMath.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.Model\\ColorMath.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.Model\\ColorMath.cs",
               "RelativeDocumentMoniker": "ColorConverter9.Model\\ColorMath.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.Model\\ColorMath.cs",
-              "RelativeToolTip": "ColorConverter9.Model\\ColorMath.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.Model\\ColorMath.cs*",
+              "RelativeToolTip": "ColorConverter9.Model\\ColorMath.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T10:24:48.651Z",
               "EditorCaption": ""

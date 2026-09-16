@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.Model\\ColorConverter9.Model.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.Model\\ColorConverter9.Model.csproj",
       "projectName": "ColorConverter9.Model",
-      "projectPath": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.Model\\ColorConverter9.Model.csproj",
+      "projectPath": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.Model\\ColorConverter9.Model.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Desktop\\ColorConverter9\\ColorConverter9.Model\\obj\\",
+      "outputPath": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
