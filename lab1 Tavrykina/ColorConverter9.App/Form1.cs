@@ -34,7 +34,7 @@ namespace ColorConverter9
 
         public Form1()
         {
-            this.Text = "HSV ↔ XYZ ↔ LAB - Вариант 9";
+            this.Text = "HSV <=> XYZ <=> LAB";
             this.Size = new Size(980, 820);
             this.BackColor = Color.FromArgb(30, 30, 50);
             this.StartPosition = FormStartPosition.CenterScreen;
