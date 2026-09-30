@@ -1,31 +1,33 @@
 using System;
+using System.Collections.Generic;
 
 namespace ColorConverter9.Core
 {
- 
     public enum Illuminant
     {
-        D65, 
-        D50,   
-        E     
+        D65,
+        D50,
+        E
     }
 
-  
     public enum GamutStrategy
     {
-        Clip,  
-        Scale  
+        Clip,
+        Scale
     }
 
-    
     public static class ColorMath
     {
         private static readonly (double x, double y) PrimaryR = (0.6400, 0.3300);
         private static readonly (double x, double y) PrimaryG = (0.3000, 0.6000);
         private static readonly (double x, double y) PrimaryB = (0.1500, 0.0600);
 
-        
-        
+        private static readonly Dictionary<Illuminant, double[,]> _rgbToXyzCache = new();
+        private static readonly Dictionary<Illuminant, double[,]> _xyzToRgbCache = new();
+        private static readonly object _lock = new object();
+
+        private const double Eps = 1e-12;
+
         public static (double X, double Y, double Z) GetWhitePoint(Illuminant illum)
         {
             switch (illum)
@@ -34,41 +36,55 @@ namespace ColorConverter9.Core
                     return (96.422, 100.000, 82.521);
                 case Illuminant.E:
                     return (100.000, 100.000, 100.000);
-                default: 
+                default:
                     return (95.047, 100.000, 108.883);
             }
         }
 
-
-
-
-
-
-
- public static double[,] BuildRgbToXyzMatrix(Illuminant illum)
+        public static double[,] BuildRgbToXyzMatrix(Illuminant illum)
         {
-            double[] xr = ChromaticityToXyzUnitY(PrimaryR);
-            double[] xg = ChromaticityToXyzUnitY(PrimaryG);
-            double[] xb = ChromaticityToXyzUnitY(PrimaryB);
-
-            double[,] m = new double[3, 3]
+            lock (_lock)
             {
-                { xr[0], xg[0], xb[0] },
-                { xr[1], xg[1], xb[1] },
-                { xr[2], xg[2], xb[2] }
-            };
+                if (_rgbToXyzCache.TryGetValue(illum, out var cached))
+                    return cached;
 
-            var wp = GetWhitePoint(illum);
-            double[] w = { wp.X / 100.0, wp.Y / 100.0, wp.Z / 100.0 }; 
+                double[] xr = ChromaticityToXyzUnitY(PrimaryR);
+                double[] xg = ChromaticityToXyzUnitY(PrimaryG);
+                double[] xb = ChromaticityToXyzUnitY(PrimaryB);
 
-            double[] s = SolveLinearSystem3x3(m, w);
+                double[,] m = new double[3, 3]
+                {
+                    { xr[0], xg[0], xb[0] },
+                    { xr[1], xg[1], xb[1] },
+                    { xr[2], xg[2], xb[2] }
+                };
 
-            double[,] result = new double[3, 3];
-            for (int row = 0; row < 3; row++)
-                for (int col = 0; col < 3; col++)
-                    result[row, col] = m[row, col] * s[col];
+                var wp = GetWhitePoint(illum);
+                double[] w = { wp.X / 100.0, wp.Y / 100.0, wp.Z / 100.0 };
 
-            return result;
+                double[] s = SolveLinearSystem3x3(m, w);
+
+                double[,] result = new double[3, 3];
+                for (int row = 0; row < 3; row++)
+                    for (int col = 0; col < 3; col++)
+                        result[row, col] = m[row, col] * s[col];
+
+                _rgbToXyzCache[illum] = result;
+                return result;
+            }
+        }
+
+        public static double[,] GetXyzToRgbMatrix(Illuminant illum)
+        {
+            lock (_lock)
+            {
+                if (_xyzToRgbCache.TryGetValue(illum, out var cached))
+                    return cached;
+
+                var inv = Invert3x3(BuildRgbToXyzMatrix(illum));
+                _xyzToRgbCache[illum] = inv;
+                return inv;
+            }
         }
 
         private static double[] ChromaticityToXyzUnitY((double x, double y) c)
@@ -79,8 +95,6 @@ namespace ColorConverter9.Core
             return new[] { X, Y, Z };
         }
 
-        
-        
         private static double Determinant3x3(double[,] m)
         {
             return m[0, 0] * (m[1, 1] * m[2, 2] - m[1, 2] * m[2, 1])
@@ -91,6 +105,9 @@ namespace ColorConverter9.Core
         private static double[] SolveLinearSystem3x3(double[,] m, double[] rhs)
         {
             double det = Determinant3x3(m);
+            if (Math.Abs(det) < Eps)
+                throw new InvalidOperationException("Singular matrix in SolveLinearSystem3x3.");
+
             double[] result = new double[3];
             for (int col = 0; col < 3; col++)
             {
@@ -104,6 +121,9 @@ namespace ColorConverter9.Core
         public static double[,] Invert3x3(double[,] m)
         {
             double det = Determinant3x3(m);
+            if (Math.Abs(det) < Eps)
+                throw new InvalidOperationException("Singular matrix in Invert3x3.");
+
             double[,] inv = new double[3, 3];
 
             inv[0, 0] = (m[1, 1] * m[2, 2] - m[1, 2] * m[2, 1]) / det;
@@ -132,10 +152,8 @@ namespace ColorConverter9.Core
 
         public static double Clamp(double v, double min, double max) => Math.Min(Math.Max(v, min), max);
 
-      
-        
-        
-        
+
+
         public static double SrgbToLinear(double c)
         {
             return c <= 0.04045 ? c / 12.92 : Math.Pow((c + 0.055) / 1.055, 2.4);
@@ -146,7 +164,8 @@ namespace ColorConverter9.Core
             return c <= 0.0031308 ? c * 12.92 : 1.055 * Math.Pow(c, 1 / 2.4) - 0.055;
         }
 
-        // HSV <=> RGB
+        
+
         public static (double r, double g, double b) HsvToRgb(double h, double s, double v)
         {
             h = ((h % 360) + 360) % 360;
@@ -175,21 +194,26 @@ namespace ColorConverter9.Core
             double min = Math.Min(r, Math.Min(g, b));
             double delta = max - min;
 
+            if (delta < Eps)
+                return (0, 0, max);
+
             double h;
-            if (delta < 1e-9) h = 0;
-            else if (max == r) h = 60 * (((g - b) / delta) % 6);
-            else if (max == g) h = 60 * ((b - r) / delta + 2);
-            else h = 60 * ((r - g) / delta + 4);
+            if (Math.Abs(max - r) < Eps)
+                h = 60 * (((g - b) / delta) % 6);
+            else if (Math.Abs(max - g) < Eps)
+                h = 60 * ((b - r) / delta + 2);
+            else
+                h = 60 * ((r - g) / delta + 4);
+
             if (h < 0) h += 360;
 
-            double s = max < 1e-9 ? 0 : delta / max;
+            double s = delta / max;
             double v = max;
 
             return (h, s, v);
         }
 
-
-        // RGB(0..255) <=> XYZ(0..100), 
+        
         public static (double x, double y, double z) RgbToXyz(int r, int g, int b, Illuminant illum)
         {
             double rLin = SrgbToLinear(r / 255.0);
@@ -201,10 +225,10 @@ namespace ColorConverter9.Core
             return (xyz.x * 100, xyz.y * 100, xyz.z * 100);
         }
 
-        public static (int r, int g, int b, bool clipped) XyzToRgb(double x, double y, double z, Illuminant illum, GamutStrategy strategy)
+        public static (int r, int g, int b, bool clipped) XyzToRgb(
+            double x, double y, double z, Illuminant illum, GamutStrategy strategy)
         {
-            var mtx = BuildRgbToXyzMatrix(illum);
-            var inv = Invert3x3(mtx);
+            var inv = GetXyzToRgbMatrix(illum);
             var lin = MultiplyMatrixVector(inv, x / 100.0, y / 100.0, z / 100.0);
 
             double rLin = lin.x, gLin = lin.y, bLin = lin.z;
@@ -213,15 +237,23 @@ namespace ColorConverter9.Core
 
             if (strategy == GamutStrategy.Scale)
             {
-                double maxVal = Math.Max(1.0, Math.Max(rLin, Math.Max(gLin, bLin)));
-                double minVal = Math.Min(0.0, Math.Min(rLin, Math.Min(gLin, bLin)));
+                double maxVal = Math.Max(rLin, Math.Max(gLin, bLin));
+                double minVal = Math.Min(rLin, Math.Min(gLin, bLin));
+
                 if (maxVal > 1.0 || minVal < 0.0)
                 {
                     clipped = true;
                     double range = maxVal - minVal;
-                    r = range > 0 ? (rLin - minVal) / range : 0.5;
-                    g = range > 0 ? (gLin - minVal) / range : 0.5;
-                    b = range > 0 ? (bLin - minVal) / range : 0.5;
+                    if (range < Eps)
+                    {
+                        r = g = b = 0.5;
+                    }
+                    else
+                    {
+                        r = (rLin - minVal) / range;
+                        g = (gLin - minVal) / range;
+                        b = (bLin - minVal) / range;
+                    }
                 }
                 else
                 {
@@ -230,7 +262,8 @@ namespace ColorConverter9.Core
             }
             else
             {
-                if (rLin < 0 || rLin > 1 || gLin < 0 || gLin > 1 || bLin < 0 || bLin > 1) clipped = true;
+                if (rLin < 0 || rLin > 1 || gLin < 0 || gLin > 1 || bLin < 0 || bLin > 1)
+                    clipped = true;
                 r = Clamp(rLin, 0, 1);
                 g = Clamp(gLin, 0, 1);
                 b = Clamp(bLin, 0, 1);
@@ -243,8 +276,8 @@ namespace ColorConverter9.Core
             return (ri, gi, bi, clipped);
         }
 
-        // XYZ <=> LAB
-        
+       
+
         public static (double l, double a, double b) XyzToLab(double x, double y, double z, Illuminant illum)
         {
             var wp = GetWhitePoint(illum);
@@ -257,7 +290,7 @@ namespace ColorConverter9.Core
             double A = 500 * (fx - fy);
             double B = 200 * (fy - fz);
 
-            return (Clamp(L, 0, 100), Clamp(A, -128, 128), Clamp(B, -128, 128));
+            return (Math.Max(0, L), A, B);
         }
 
         public static (double x, double y, double z) LabToXyz(double l, double a, double b, Illuminant illum)
@@ -272,35 +305,100 @@ namespace ColorConverter9.Core
             double y = LabFInv(fy) * wp.Y;
             double z = LabFInv(fz) * wp.Z;
 
-            return (Clamp(x, 0, 100), Clamp(y, 0, 100), Clamp(z, 0, 100));
+            return (x, y, z);
         }
 
         private static double LabF(double t)
         {
             double eps = Math.Pow(6.0 / 29.0, 3);
-            return t > eps ? Math.Pow(t, 1.0 / 3.0) : (1.0 / 3.0) * Math.Pow(29.0 / 6.0, 2) * t + 4.0 / 29.0;
+            return t > eps
+                ? Math.Pow(t, 1.0 / 3.0)
+                : (1.0 / 3.0) * Math.Pow(29.0 / 6.0, 2) * t + 4.0 / 29.0;
         }
 
         private static double LabFInv(double t)
         {
-            return t > 6.0 / 29.0 ? Math.Pow(t, 3) : 3 * Math.Pow(6.0 / 29.0, 2) * (t - 4.0 / 29.0);
+            return t > 6.0 / 29.0
+                ? Math.Pow(t, 3)
+                : 3 * Math.Pow(6.0 / 29.0, 2) * (t - 4.0 / 29.0);
         }
 
-        // HSV <=> XYZ
+   
         public static (double x, double y, double z) HsvToXyz(double h, double s, double v, Illuminant illum)
         {
-            var rgb = HsvToRgb(h, s, v); 
-            int r = (int)Math.Round(Clamp(rgb.r, 0, 1) * 255);
-            int g = (int)Math.Round(Clamp(rgb.g, 0, 1) * 255);
-            int bl = (int)Math.Round(Clamp(rgb.b, 0, 1) * 255);
-            return RgbToXyz(r, g, bl, illum);
+            var rgb = HsvToRgb(h, s, v);
+
+            double rLin = SrgbToLinear(Clamp(rgb.r, 0, 1));
+            double gLin = SrgbToLinear(Clamp(rgb.g, 0, 1));
+            double bLin = SrgbToLinear(Clamp(rgb.b, 0, 1));
+
+            var mtx = BuildRgbToXyzMatrix(illum);
+            var xyz = MultiplyMatrixVector(mtx, rLin, gLin, bLin);
+            return (xyz.x * 100, xyz.y * 100, xyz.z * 100);
         }
 
-        public static (double h, double s, double v, bool clipped) XyzToHsv(double x, double y, double z, Illuminant illum, GamutStrategy strategy)
+        public static (double h, double s, double v, bool outOfGamut) XyzToHsvRaw(
+            double x, double y, double z, Illuminant illum)
+        {
+            var inv = GetXyzToRgbMatrix(illum);
+            var lin = MultiplyMatrixVector(inv, x / 100.0, y / 100.0, z / 100.0);
+
+            const double gamutEps = 1e-9;
+            bool outOfGamut = lin.x < -gamutEps || lin.x > 1 + gamutEps
+                           || lin.y < -gamutEps || lin.y > 1 + gamutEps
+                           || lin.z < -gamutEps || lin.z > 1 + gamutEps;
+
+            double rs = SafeLinearToSrgb(lin.x);
+            double gs = SafeLinearToSrgb(lin.y);
+            double bs = SafeLinearToSrgb(lin.z);
+
+            var hsv = RgbToHsvSafe(rs, gs, bs);
+            return (hsv.h, hsv.s, hsv.v, outOfGamut);
+        }
+
+        public static (double h, double s, double v, bool clipped) XyzToHsv(
+            double x, double y, double z, Illuminant illum, GamutStrategy strategy)
         {
             var rgb = XyzToRgb(x, y, z, illum, strategy);
             var hsv = RgbToHsv(rgb.r / 255.0, rgb.g / 255.0, rgb.b / 255.0);
             return (hsv.h, hsv.s, hsv.v, rgb.clipped);
+        }
+
+    
+        public static double SafeLinearToSrgb(double c)
+        {
+            double sign = c < 0 ? -1.0 : 1.0;
+            double a = Math.Abs(c);
+            double r = a <= 0.0031308
+                ? a * 12.92
+                : 1.055 * Math.Pow(a, 1.0 / 2.4) - 0.055;
+            return sign * r;
+        }
+
+
+        public static (double h, double s, double v) RgbToHsvSafe(double r, double g, double b)
+        {
+            double max = Math.Max(r, Math.Max(g, b));
+            double min = Math.Min(r, Math.Min(g, b));
+            double delta = max - min;
+
+            if (Math.Abs(delta) < Eps)
+                return (0, 0, max);
+
+            double h;
+            if (Math.Abs(max - r) < Eps)
+                h = 60 * (((g - b) / delta) % 6);
+            else if (Math.Abs(max - g) < Eps)
+                h = 60 * ((b - r) / delta + 2);
+            else
+                h = 60 * ((r - g) / delta + 4);
+
+            if (h < 0) h += 360;
+
+            double s = Math.Abs(max) < Eps ? 0 : delta / max;
+            double v = max;
+
+            return (h, s, v);
         }
     }
 }

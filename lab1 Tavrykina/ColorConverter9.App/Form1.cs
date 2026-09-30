@@ -358,32 +358,32 @@ namespace ColorConverter9
             catch { /* wrong input */ }
         }
 
-        
+
         private void OnStateChanged(ColorState st)
         {
             isUpdatingUi = true;
             try
             {
-                trackH.Value = Clamp(RoundToInt(st.H), trackH.Minimum, trackH.Maximum);
-                trackS.Value = Clamp(RoundToInt(st.S), trackS.Minimum, trackS.Maximum);
-                trackV.Value = Clamp(RoundToInt(st.V), trackV.Minimum, trackV.Maximum);
-                txtH.Text = RoundToInt(st.H).ToString();
-                txtS.Text = RoundToInt(st.S).ToString();
-                txtV.Text = RoundToInt(st.V).ToString();
+                trackH.Value = Clamp(st.H, trackH.Minimum, trackH.Maximum);
+                trackS.Value = Clamp(st.S, trackS.Minimum, trackS.Maximum);
+                trackV.Value = Clamp(st.V, trackV.Minimum, trackV.Maximum);
+                txtH.Text = st.H.ToString();
+                txtS.Text = st.S.ToString();
+                txtV.Text = st.V.ToString();
 
-                trackX.Value = Clamp(RoundToInt(st.X), trackX.Minimum, trackX.Maximum);
-                trackY.Value = Clamp(RoundToInt(st.Y), trackY.Minimum, trackY.Maximum);
-                trackZ.Value = Clamp(RoundToInt(st.Z), trackZ.Minimum, trackZ.Maximum);
-                txtX.Text = st.X.ToString("F2");
-                txtY.Text = st.Y.ToString("F2");
-                txtZ.Text = st.Z.ToString("F2");
+                trackX.Value = Clamp(st.X, trackX.Minimum, trackX.Maximum);
+                trackY.Value = Clamp(st.Y, trackY.Minimum, trackY.Maximum);
+                trackZ.Value = Clamp(st.Z, trackZ.Minimum, trackZ.Maximum);
+                txtX.Text = st.X.ToString();
+                txtY.Text = st.Y.ToString();
+                txtZ.Text = st.Z.ToString();
 
-                trackL.Value = Clamp(RoundToInt(st.L), trackL.Minimum, trackL.Maximum);
-                trackA.Value = Clamp(RoundToInt(st.A + 128), trackA.Minimum, trackA.Maximum);
-                trackB2.Value = Clamp(RoundToInt(st.B + 128), trackB2.Minimum, trackB2.Maximum);
-                txtL.Text = st.L.ToString("F2");
-                txtA.Text = st.A.ToString("F2");
-                txtB2.Text = st.B.ToString("F2");
+                trackL.Value = Clamp(st.L, trackL.Minimum, trackL.Maximum);
+                trackA.Value = Clamp(st.A + 128, trackA.Minimum, trackA.Maximum);
+                trackB2.Value = Clamp(st.B + 128, trackB2.Minimum, trackB2.Maximum);
+                txtL.Text = st.L.ToString();
+                txtA.Text = st.A.ToString();
+                txtB2.Text = st.B.ToString();
 
                 txtHex.Text = $"#{st.R:X2}{st.G:X2}{st.Bl:X2}";
                 picPreview.BackColor = Color.FromArgb(st.R, st.G, st.Bl);

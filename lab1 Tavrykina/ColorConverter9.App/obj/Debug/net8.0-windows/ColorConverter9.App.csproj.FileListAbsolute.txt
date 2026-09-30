@@ -36,3 +36,5 @@ C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\obj\Debug\net8.0-win
 C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\obj\Debug\net8.0-windows\ColorConverter9.pdb
 C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\obj\Debug\net8.0-windows\ColorConverter9.App.genruntimeconfig.cache
 C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\obj\Debug\net8.0-windows\ref\ColorConverter9.dll
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\obj\Debug\net8.0-windows\ColorConverter9.Form1.resources
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\obj\Debug\net8.0-windows\ColorConverter9.App.csproj.GenerateResource.cache

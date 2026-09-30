@@ -2,36 +2,20 @@ using System;
 
 namespace ColorConverter9.Core
 {
-    public class ColorState
-    {
-        public double H, S, V;              
-        public double X, Y, Z;              
-        public double L, A, B;             
-        public int R, G, Bl;               
-        public bool GamutClipped;
-        public Illuminant Illuminant;
-        public GamutStrategy GamutStrategy;
-    }
-
-    public enum ChangedFrom { Hsv, Xyz, Lab, Hex, Settings }
-
-
-
-
-
     public class ColorViewModel
     {
         public Illuminant Illuminant { get; private set; } = Illuminant.D65;
         public GamutStrategy GamutStrategy { get; private set; } = GamutStrategy.Clip;
 
-
+        
         private double currentX, currentY, currentZ;
+        private double currentH, currentS, currentV;
+        private bool hsvAuthoritative = false;
 
         public event Action<ColorState> StateChanged;
 
         public ColorViewModel()
         {
-
             var xyz = ColorMath.RgbToXyz(255, 0, 0, Illuminant);
             currentX = xyz.x; currentY = xyz.y; currentZ = xyz.z;
             Publish();
@@ -40,6 +24,7 @@ namespace ColorConverter9.Core
         public void SetIlluminant(Illuminant illum)
         {
             Illuminant = illum;
+            hsvAuthoritative = false;
             Publish();
         }
 
@@ -51,6 +36,11 @@ namespace ColorConverter9.Core
 
         public void SetFromHsv(double h, double s, double v)
         {
+            currentH = h;
+            currentS = s;
+            currentV = v;
+            hsvAuthoritative = true;
+
             var xyz = ColorMath.HsvToXyz(h, s / 100.0, v / 100.0, Illuminant);
             currentX = xyz.x; currentY = xyz.y; currentZ = xyz.z;
             Publish();
@@ -59,6 +49,7 @@ namespace ColorConverter9.Core
         public void SetFromXyz(double x, double y, double z)
         {
             currentX = x; currentY = y; currentZ = z;
+            hsvAuthoritative = false;
             Publish();
         }
 
@@ -66,6 +57,7 @@ namespace ColorConverter9.Core
         {
             var xyz = ColorMath.LabToXyz(l, a, b, Illuminant);
             currentX = xyz.x; currentY = xyz.y; currentZ = xyz.z;
+            hsvAuthoritative = false;
             Publish();
         }
 
@@ -73,10 +65,9 @@ namespace ColorConverter9.Core
         {
             var xyz = ColorMath.RgbToXyz(r, g, b, Illuminant);
             currentX = xyz.x; currentY = xyz.y; currentZ = xyz.z;
+            hsvAuthoritative = false;
             Publish();
         }
-
-        
 
         public (int r, int g, int b) PreviewRgbForXyz(double x, double y, double z)
         {
@@ -98,17 +89,43 @@ namespace ColorConverter9.Core
 
         private void Publish()
         {
-            var hsv = ColorMath.XyzToHsv(currentX, currentY, currentZ, Illuminant, GamutStrategy);
+            double h, s, v;
+            bool hsvOutOfGamut = false;
+
+            if (hsvAuthoritative)
+            {
+                h = currentH;
+                s = currentS;
+                v = currentV;
+            }
+            else
+            {
+                var hsvRaw = ColorMath.XyzToHsvRaw(currentX, currentY, currentZ, Illuminant);
+                h = hsvRaw.h;
+                s = hsvRaw.s * 100;
+                v = hsvRaw.v * 100;
+                hsvOutOfGamut = hsvRaw.outOfGamut;
+                currentH = h; currentS = s; currentV = v;
+            }
+
             var lab = ColorMath.XyzToLab(currentX, currentY, currentZ, Illuminant);
             var rgb = ColorMath.XyzToRgb(currentX, currentY, currentZ, Illuminant, GamutStrategy);
 
             var state = new ColorState
             {
-                H = hsv.h, S = hsv.s * 100, V = hsv.v * 100,
-                X = currentX, Y = currentY, Z = currentZ,
-                L = lab.l, A = lab.a, B = lab.b,
-                R = rgb.r, G = rgb.g, Bl = rgb.b,
-                GamutClipped = hsv.clipped || rgb.clipped,
+                H = (int)Math.Round(h),
+                S = (int)Math.Round(s),
+                V = (int)Math.Round(v),
+                X = (int)Math.Round(currentX),
+                Y = (int)Math.Round(currentY),
+                Z = (int)Math.Round(currentZ),
+                L = (int)Math.Round(lab.l),
+                A = (int)Math.Round(lab.a),
+                B = (int)Math.Round(lab.b),
+                R = rgb.r,
+                G = rgb.g,
+                Bl = rgb.b,
+                GamutClipped = hsvOutOfGamut || rgb.clipped,
                 Illuminant = Illuminant,
                 GamutStrategy = GamutStrategy
             };
