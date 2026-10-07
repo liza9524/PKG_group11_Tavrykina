@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\USER\\my-project\\lab2\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7277F27B-C2CC-59D7-8B93-CC27899A25CA}|ImageInfoLab.csproj|c:\\users\\user\\my-project\\lab2\\imageinfolab.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7277F27B-C2CC-59D7-8B93-CC27899A25CA}|ImageInfoLab.csproj|solutionrelative:imageinfolab.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7277F27B-C2CC-59D7-8B93-CC27899A25CA}|ImageInfoLab.csproj|c:\\users\\user\\my-project\\lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7277F27B-C2CC-59D7-8B93-CC27899A25CA}|ImageInfoLab.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7277F27B-C2CC-59D7-8B93-CC27899A25CA}|ImageInfoLab.csproj|c:\\users\\user\\my-project\\lab2\\headerreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7277F27B-C2CC-59D7-8B93-CC27899A25CA}|ImageInfoLab.csproj|solutionrelative:headerreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +31,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ImageInfoLab",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab2\\ImageInfoLab.csproj",
+              "RelativeDocumentMoniker": "ImageInfoLab.csproj",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab2\\ImageInfoLab.csproj",
+              "RelativeToolTip": "ImageInfoLab.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-07T18:01:00.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T18:00:53.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HeaderReader.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab2\\HeaderReader.cs",
+              "RelativeDocumentMoniker": "HeaderReader.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab2\\HeaderReader.cs",
+              "RelativeToolTip": "HeaderReader.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-07T18:00:38.049Z",
+              "EditorCaption": ""
             }
           ]
         }

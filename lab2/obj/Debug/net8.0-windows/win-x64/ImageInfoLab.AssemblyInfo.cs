@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImageInfoLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+076bc56a0f197c540c2c3efc9bc83c75ce4e8285")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a059bca43a4668e5a9631131f5c1e3bb77b46d58")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImageInfoLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImageInfoLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

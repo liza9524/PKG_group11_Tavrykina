@@ -7,7 +7,6 @@
     <Nullable>disable</Nullable>
     <AssemblyName>ImageInfoLab</AssemblyName>
     <RootNamespace>ImageInfoLab</RootNamespace>
-    <!-- Один самодостаточный exe: работает на любом Windows-ПК без установки .NET -->
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <SelfContained>true</SelfContained>
     <PublishSingleFile>true</PublishSingleFile>
