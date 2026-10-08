@@ -6,23 +6,23 @@ using ColorConverter9.Core;
 
 namespace ColorConverter9
 {
-    
     public partial class Form1 : Form
     {
         private readonly ColorViewModel vm = new ColorViewModel();
         private bool isUpdatingUi = false;
 
-        // HSV
+
         private TrackBar trackH, trackS, trackV;
         private TextBox txtH, txtS, txtV;
         private Panel gradH, gradS, gradV;
 
-        // XYZ
+       
+
         private TrackBar trackX, trackY, trackZ;
         private TextBox txtX, txtY, txtZ;
         private Panel gradX, gradY, gradZ;
 
-        // LAB
+
         private TrackBar trackL, trackA, trackB2;
         private TextBox txtL, txtA, txtB2;
         private Panel gradL, gradA, gradB2;
@@ -38,6 +38,9 @@ namespace ColorConverter9
             this.Size = new Size(980, 820);
             this.BackColor = Color.FromArgb(30, 30, 50);
             this.StartPosition = FormStartPosition.CenterScreen;
+
+            this.MinimumSize = new Size(800, 600);
+            this.MaximumSize = new Size(1920, 1080);
 
             CreateUI();
 
@@ -240,7 +243,8 @@ namespace ColorConverter9
 
             y += 20;
         }
- private void CreateSlider(string label, int x, ref int y,
+
+        private void CreateSlider(string label, int x, ref int y,
             out TrackBar track, out TextBox text, out Panel gradient, int min, int max)
         {
             Label lbl = new Label
@@ -286,9 +290,6 @@ namespace ColorConverter9
 
             y += 40;
         }
-
-        
-
 
         private void OnHsvSliderMoved()
         {
@@ -358,7 +359,6 @@ namespace ColorConverter9
             catch { /* wrong input */ }
         }
 
-
         private void OnStateChanged(ColorState st)
         {
             isUpdatingUi = true;
@@ -403,9 +403,6 @@ namespace ColorConverter9
 
         private static int RoundToInt(double v) => (int)Math.Round(v);
         private static int Clamp(int v, int min, int max) => Math.Min(Math.Max(v, min), max);
-
-
-
 
         private void RedrawGradients(ColorState st)
         {
