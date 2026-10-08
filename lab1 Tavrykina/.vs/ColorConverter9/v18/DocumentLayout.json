@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "ColorConverter9.App\\Form1.cs",
               "ToolTip": "C:\\Users\\USER\\my-project\\lab1 Tavrykina\\ColorConverter9.App\\Form1.cs",
               "RelativeToolTip": "ColorConverter9.App\\Form1.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAcwA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAA2wA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-08T09:23:02.699Z",
               "EditorCaption": ""
@@ -67,8 +67,7 @@
               "RelativeToolTip": "ColorConverter9.App\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-08T09:22:08.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-08T09:22:08.524Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "ColorConverter9.Model\\ColorState.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T08:00:09.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-30T08:00:09.064Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "ColorConverter9.Model\\ColorViewModel.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwHQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T10:24:50.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T10:24:50.239Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "ColorConverter9.Model\\ColorMath.cs",
               "ViewState": "AgIAAJ0AAAAAAAAAAAAwwKIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T10:24:48.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T10:24:48.651Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "ColorConverter9.Tests\\ColorMathTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T10:24:52.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T10:24:52.603Z"
             }
           ]
         }
