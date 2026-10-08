@@ -38,3 +38,12 @@ C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\obj\Debug\net8.0-win
 C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\obj\Debug\net8.0-windows\ref\ColorConverter9.dll
 C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\obj\Debug\net8.0-windows\ColorConverter9.Form1.resources
 C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\obj\Debug\net8.0-windows\ColorConverter9.App.csproj.GenerateResource.cache
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\bin\Debug\Debug\net8.0-windows\ColorConverter9.exe
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\bin\Debug\Debug\net8.0-windows\ColorConverter9.deps.json
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\bin\Debug\Debug\net8.0-windows\ColorConverter9.runtimeconfig.json
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\bin\Debug\Debug\net8.0-windows\ColorConverter9.dll
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\bin\Debug\Debug\net8.0-windows\ColorConverter9.pdb
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\bin\Debug\Debug\net8.0-windows\ColorConverter9.xml
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\bin\Debug\Debug\net8.0-windows\ColorConverter9.Model.dll
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\bin\Debug\Debug\net8.0-windows\ColorConverter9.Model.pdb
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\obj\Debug\net8.0-windows\ColorConverter9.xml

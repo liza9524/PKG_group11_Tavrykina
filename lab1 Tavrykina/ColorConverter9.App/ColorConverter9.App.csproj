@@ -8,6 +8,9 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <RootNamespace>ColorConverter9</RootNamespace>
     <AssemblyName>ColorConverter9</AssemblyName>
+    <BaseOutputPath>bin\Debug\</BaseOutputPath>
+    <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

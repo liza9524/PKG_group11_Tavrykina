@@ -23,7 +23,7 @@ namespace ColorConverter9.Tests
                 $"{what}: expected {expected:F4}, got {actual:F4} (tol {tol})");
         }
 
-        
+
 
         [TestMethod]
         public void RgbToLab_Red_MatchesReference()
@@ -78,7 +78,7 @@ namespace ColorConverter9.Tests
             AssertCloseAbs(0.0, lab.b, "b");
         }
 
-        
+
 
         [TestMethod]
         public void WhitePoint_Invariant_HoldsForEveryIlluminant()
@@ -101,7 +101,7 @@ namespace ColorConverter9.Tests
             Assert.AreNotEqual(m65[0, 0], m50[0, 0], 1e-9);
         }
 
-       
+
 
         [TestMethod]
         public void RoundTrip_HsvXyzHsv_ReturnsOriginalHsv()
@@ -183,3 +183,6 @@ namespace ColorConverter9.Tests
             Assert.AreEqual(0, hsv.h, 1e-9);
             Assert.AreEqual(0, hsv.s, 1e-9);
             Assert.AreEqual(0.5, hsv.v, 1e-9);
+        }
+    }
+}

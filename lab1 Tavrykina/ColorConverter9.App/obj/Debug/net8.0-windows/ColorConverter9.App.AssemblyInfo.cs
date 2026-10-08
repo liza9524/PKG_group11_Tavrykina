@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ColorConverter9")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8614e585c682a419339ebb852738f68cd52ef98")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb4abb6c92cec5f76f0fcfc2d25f772f8cae5937")]
 [assembly: System.Reflection.AssemblyProductAttribute("ColorConverter9")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ColorConverter9")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
