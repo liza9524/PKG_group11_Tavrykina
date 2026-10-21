@@ -1,0 +1,2 @@
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\bin\Debug\Release\net8.0-windows\win-x64\publish\ColorConverter9.pdb
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.App\bin\Debug\Release\net8.0-windows\win-x64\publish\ColorConverter9.exe

@@ -1,0 +1,12 @@
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\bin\Release\net8.0\win-x64\ColorConverter9.Model.deps.json
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\bin\Release\net8.0\win-x64\ColorConverter9.Model.dll
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\bin\Release\net8.0\win-x64\ColorConverter9.Model.pdb
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\obj\Release\net8.0\win-x64\ColorConverter9.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\obj\Release\net8.0\win-x64\ColorConverter9.Model.AssemblyInfoInputs.cache
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\obj\Release\net8.0\win-x64\ColorConverter9.Model.AssemblyInfo.cs
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\obj\Release\net8.0\win-x64\ColorConverter9.Model.csproj.CoreCompileInputs.cache
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\obj\Release\net8.0\win-x64\ColorConverter9.Model.sourcelink.json
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\obj\Release\net8.0\win-x64\ColorConverter9.Model.dll
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\obj\Release\net8.0\win-x64\refint\ColorConverter9.Model.dll
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\obj\Release\net8.0\win-x64\ColorConverter9.Model.pdb
+C:\Users\USER\my-project\lab1 Tavrykina\ColorConverter9.Model\obj\Release\net8.0\win-x64\ref\ColorConverter9.Model.dll

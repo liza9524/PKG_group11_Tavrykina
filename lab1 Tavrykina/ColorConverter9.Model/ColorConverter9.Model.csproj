@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>ColorConverter9.Core</RootNamespace>
+    <!-- Чистый Model + ViewModel слой: ни одного using System.Windows.Forms.
+         Проверяемо: grep -R "Windows.Forms" в этой папке ничего не найдёт. -->
+  </PropertyGroup>
+
+</Project>
