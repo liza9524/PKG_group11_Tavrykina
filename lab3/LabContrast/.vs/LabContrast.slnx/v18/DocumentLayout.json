@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|c:\\users\\user\\my-project\\lab3\\labcontrast\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|c:\\users\\user\\my-project\\lab3\\labcontrast\\algorithms\\pointops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|solutionrelative:algorithms\\pointops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|c:\\users\\user\\my-project\\lab3\\labcontrast\\algorithms\\equalization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|solutionrelative:algorithms\\equalization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|c:\\users\\user\\my-project\\lab3\\labcontrast\\algorithms\\clahe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|solutionrelative:algorithms\\clahe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|c:\\users\\user\\my-project\\lab3\\labcontrast\\core\\pixelbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|solutionrelative:core\\pixelbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|c:\\users\\user\\my-project\\lab3\\labcontrast\\core\\histogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|solutionrelative:core\\histogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|c:\\users\\user\\my-project\\lab3\\labcontrast\\core\\colorspace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|solutionrelative:core\\colorspace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|c:\\users\\user\\my-project\\lab3\\labcontrast\\ui\\testimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|solutionrelative:ui\\testimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|c:\\users\\user\\my-project\\lab3\\labcontrast\\ui\\histogrampanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCB89DAB-5D2B-1B5C-C1CE-6501A4E0D420}|LabContrast.csproj|solutionrelative:ui\\histogrampanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T17:03:07.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PointOps.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Algorithms\\PointOps.cs",
+              "RelativeDocumentMoniker": "Algorithms\\PointOps.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Algorithms\\PointOps.cs",
+              "RelativeToolTip": "Algorithms\\PointOps.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T17:03:04.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Equalization.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Algorithms\\Equalization.cs",
+              "RelativeDocumentMoniker": "Algorithms\\Equalization.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Algorithms\\Equalization.cs",
+              "RelativeToolTip": "Algorithms\\Equalization.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T17:03:03.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Clahe.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Algorithms\\Clahe.cs",
+              "RelativeDocumentMoniker": "Algorithms\\Clahe.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Algorithms\\Clahe.cs",
+              "RelativeToolTip": "Algorithms\\Clahe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T17:03:02.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PixelBuffer.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Core\\PixelBuffer.cs",
+              "RelativeDocumentMoniker": "Core\\PixelBuffer.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Core\\PixelBuffer.cs",
+              "RelativeToolTip": "Core\\PixelBuffer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T17:03:00.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Histogram.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Core\\Histogram.cs",
+              "RelativeDocumentMoniker": "Core\\Histogram.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Core\\Histogram.cs",
+              "RelativeToolTip": "Core\\Histogram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T17:02:59.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ColorSpace.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Core\\ColorSpace.cs",
+              "RelativeDocumentMoniker": "Core\\ColorSpace.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\Core\\ColorSpace.cs",
+              "RelativeToolTip": "Core\\ColorSpace.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T17:02:58.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TestImages.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\UI\\TestImages.cs",
+              "RelativeDocumentMoniker": "UI\\TestImages.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\UI\\TestImages.cs",
+              "RelativeToolTip": "UI\\TestImages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T17:02:54.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HistogramPanel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\UI\\HistogramPanel.cs",
+              "RelativeDocumentMoniker": "UI\\HistogramPanel.cs",
+              "ToolTip": "C:\\Users\\USER\\my-project\\lab3\\LabContrast\\UI\\HistogramPanel.cs",
+              "RelativeToolTip": "UI\\HistogramPanel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T17:02:45.562Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
